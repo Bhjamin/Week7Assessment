@@ -1,0 +1,27 @@
+extraLargeArray
+insert - 883 ms
+append - 2.7 ms
+
+largeArray
+insert 9.3 ms
+append 736 μs
+
+mediumArray
+insert 201.1 μs
+append 141.3 μs
+
+smallArray
+insert 51.1 μs
+append 80.4 μs
+
+tinyArray
+insert 35.5 μs
+append 93.3 μs
+
+It looks like the time to run each method depends on the size of your array.
+When you have an array with a length of around 1000 or more then it is more 
+efficient to use the push method. If your array is less than 1000 items then the 
+unshift method becomes for time efficient. From the first couple results I thought the 
+push method would continue to beat the unshift method significantly. It is
+interesting to see that in the two smallest arrays, their times are close with
+the unshift method barely beating out the push method.
